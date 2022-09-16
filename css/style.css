@@ -56,91 +56,6 @@ Medium: 11px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Percentage of user's browser font-size setting */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-/**************************/
-/* GENERAL REUSABLE COMPONENTS */
-/**************************/
-
-.heading-primary {
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -0.5px;
-
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.btn,
-.btn:link,
-.btn:visited {
-  display: inline-block;
-
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-
-  /* Only necessary for .btn */
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-
-  /* Put transition on original "state" */
-  /* transition: background-color 0.3s; */
-  transition: all 0.3s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-
-  /* border: 3px solid #fff; */
-
-  /* Trick to add border inside */
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-/* HELPER/SETTINGS CLASSES */
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
 
 /**************************/
 /* header */
@@ -200,9 +115,11 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
 /**************************/
 /* hero */
 /**************************/
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -235,9 +152,11 @@ body {
   margin-top: 8rem;
   gap: 1.6rem;
 }
+
 .delivered-imgs {
   display: flex;
 }
+
 .delivered-imgs img {
   height: 4.8rem;
   width: 4.8rem;
@@ -245,6 +164,7 @@ body {
   margin-right: -1.6rem;
   border: 3px solid #fdf2e9;
 }
+
 /* 因为用了margin压缩，
 最后一个margin没有显示完整，
 影响翻了flex，所以设置了最后一个margin 0 */
@@ -256,7 +176,15 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
 }
+
+/**************************/
+/* hero */
+/**************************/
+.section-how {
+  padding: 9.6rem 0;
+  background-color: pink;
