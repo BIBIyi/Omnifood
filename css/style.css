@@ -78,9 +78,6 @@ Medium: 11px
 /* navigation */
 /**************************/
 
-.main-nav {
-}
-
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -187,4 +184,8 @@ Medium: 11px
 /**************************/
 .section-how {
   padding: 9.6rem 0;
-  background-color: pink;
+}
+
+.step-img {
+  width: 50%;
+}
