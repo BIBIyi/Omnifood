@@ -7,3 +7,5 @@ design hero and header part. learn the max-width to flex.
 create general.css
 
 ### 9-17 how part
+
+finish how part ,featured part and meals part.
