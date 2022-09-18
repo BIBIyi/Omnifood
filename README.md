@@ -12,4 +12,4 @@ finish how part ,featured part and meals part.
 
 ### 9-18
 
-finish testimonials
+finish testimonials,feature, cta and footer

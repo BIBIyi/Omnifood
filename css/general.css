@@ -94,6 +94,13 @@ body {
   letter-spacing: 0.75px;
   margin-bottom: 1.6rem;
 }
+/* 去除link等的蓝色聚焦 */
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem hsla(28, 80%, 52%, 0.271);
+}
 
 .btn,
 .btn:link,
@@ -141,6 +148,20 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  /* 因为他是grid，让他与底部对齐 */
+  align-self: flex-end;
+  /* 原本的padding是1.6，重新设置让他和select的高度一样 */
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
