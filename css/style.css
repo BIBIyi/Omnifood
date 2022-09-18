@@ -283,11 +283,10 @@ Medium: 11px
 
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  transition: all 0.4s;
-
   border-radius: 11px;
   /* 取消img的溢出，当使用radius */
   overflow: hidden;
+  transition: all 0.4s;
 }
 
 .meal:hover {
@@ -363,5 +362,92 @@ Medium: 11px
 }
 
 /**************************/
-/* meals section */
+/* testimonials section */
 /**************************/
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  /* 当图片原始是inline ，图片与图片之间有白色的间距，使用block可以消除他们*/
+  width: 100%;
+  display: block;
+  transition: all 0.4s;
+}
+.gallery-item :hover {
+  transform: scale(1.1);
+}
+
+/**************************/
+/* price section */
+/**************************/
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  padding: 4.6rem;
+  background-color: pink;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.75;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}

@@ -91,7 +91,7 @@ body {
   font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
-
+  letter-spacing: 0.75px;
   margin-bottom: 1.6rem;
 }
 
@@ -150,11 +150,13 @@ body {
   padding-bottom: 2px;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
 }
 
 .link:hover,
 .link:active {
   color: #cf711f;
+  /* 不能直接用border-bottom:none.这样会少1px的宽度，使用透明 */
   border-bottom: 1px solid transparent;
 }
 
