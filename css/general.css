@@ -10,6 +10,9 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* not work on safari,所以用JavaScript写更适合*/
+  /* scroll-behavior: smooth; */
 }
 
 body {
